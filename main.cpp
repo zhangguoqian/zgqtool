@@ -11,7 +11,7 @@ int main()
     std::cout<< zgq::floatToStdString(1.5)<<std::endl;
     zgqTimer timer;
     timer.startClockMs();
-    zgq::delayS(5);
+    zgq::delayMs(5);
     std::cout<< timer.endClockMs();
     return 0;
 }

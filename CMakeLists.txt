@@ -3,6 +3,13 @@ project(zgqtool)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(TO src/to.h src/to.cpp src/delay.cpp src/delay.h src/zgq.h)
+set(TO src/to.h src/to.cpp)
+set(DELAY src/delay.h src/delay.cpp)
 
-add_executable(zgqtool ${TO} main.cpp main.cpp)
+message(${TO})
+
+add_executable(zgqtool
+        ${TO}
+        ${DELAY}
+        src/zgq.h
+        main.cpp )
